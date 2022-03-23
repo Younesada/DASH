@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashborad</title>
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylez/style.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <a href="" class="logo">
+            <i class="bi bi-lightbulb"><img src="imgs/buildings.png" alt=""></i>
+            <span>Azayer</span>
+            </a>
+            <ul class="menu">
+                <li class="active"> <a href=""><i class="bi bi-house-fill" > <img src="imgs/house.png" alt=""></i><span>Home</span>
+                    </a></li>
+                <li><a href=""><i class="bi bi-people-fill"> <img src="imgs/target.png" alt=""></i><span>Clients</span></a></li>
+                <li><a href=""><i class="bi bi-ui-radios-grid"><img src="imgs/ok.png" alt=""></i><span>Projets</span></a></li>
+                <li><a href=""><i class="bi bi-ui-checks"><img src="imgs/pro.png" alt=""></i><span>Commandes</span></a></li>
+                <li><a href=""><i class="bi bi-cash"><img src="imgs/re.png" alt=""></i><span>Reserves</span></a></li>
+                <li><a href=""><i class="bi bi-gear"><img src="imgs/para.png" alt=""></i><span>Aides</span></a></li>
+            </ul>
+    </nav>
+    <main class="content">
+        <header class="header">
+            <button type="button" class="button toggle-menu active">
+                <i class="bi bi-list"><img src="imgs/list.png" alt=""></i>
+                    <span>Acceuil</span>
+            </button>
+            <form action="" class="form">
+                <input type="text" placeholder="Recherche....">
+                <button type="submit"><i class="bi bi-search"><img src="imgs/search.png" alt=""></i></button>
+            </form>
+            <div class="box-profile">
+                <img src="imgs/use4.png" alt="">
+                <p class="name">
+                    Information
+                    <span>utilisateur</span>
+                </p>
+            </div>
+        </header>
+        <section class="section">
+            <div class="container-fluid container-content cards">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="card shadow">
+                            <div class="desc">
+                                <span>100</span>
+                                <p>CLIENTES</p>
+                            </div>
+                            <i class="bi bi-people-fill"><img src="imgs/customer.png" alt=""></i>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="card shadow">
+                            <div class="desc">
+                                <span>230</span>
+                                <p>PROJETS</p>
+                            </div>
+                            <i class="bi bi-ui-radios-grid"><img src="imgs/briefing.png" alt=""></i>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="card shadow">
+                            <div class="desc">
+                                <span>320</span>
+                                <p>COMMANDES</p>
+                            </div>
+                            <i class="bi bi-ui-checks"><img src="imgs/success.png" alt=""></i>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="card shadow">
+                            <div class="desc">
+                                <span>R$ 100K</span>
+                                <p>RECERVES</p>
+                            </div>
+                            <i class="bi bi-cash"><img src="imgs/money.png" alt=""></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid container-content charts">
+                <div class="row">
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="card shadow">
+                                <canvas class="shadow" id="chartClientes" width="400"  height="200"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="card shadow">
+                                <canvas class="shadow" id="chartReceitas" width="400"  height="400"></canvas>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="container-fluid container-content tables">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-12" >
+                        <h3 class="title">Projets Recentes</h3>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nom de projets</th>
+                                        <th scope="col">Département</th>
+                                        <th scope="col">Statut</th>
+                                    </tr>
+                                </thead>
+                          
+                            <tbody>
+                                <tr>
+                                    <td>Client 1</td>
+                                    <td>Dev</td>
+                                    <td><span class="sty1"></span>Andamento</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Client 2</td>
+                                    <td>Desingn</td>
+                                    <td><span class="sty1"></span>Andamento</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Client 3</td>
+                                    <td>Desingn</td>
+                                    <td><span class="sty2"></span>Finalizado</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Client 4</td>
+                                    <td>Dev</td>
+                                    <td><span class="sty3"></span>testes</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Client 5</td>
+                                    <td>Dev</td>
+                                    <td><span class="sty2"></span>Finalizado</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Client 6</td>
+                                    <td>Desingn</td>
+                                    <td><span class="sty1"></span>Andamento</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Client 7</td>
+                                    <td>Dev</td>
+                                    <td><span class="sty3"></span>Testes</td>
+
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12" >
+                        <h3 class="title">Noveaux clients</h3>
+                        <div class="table-responsive ">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="imgs/client1.png" alt=""></td>
+                                        <td>ANAS</td>
+                                        <td>
+                                            <a href=""><i class="bi bi-person-circle"><img src="imgs/per.png" alt=""></i></a>
+                                            <a href=""><i class="bi bi-envelope"><img src="imgs/e1.png" alt=""></i></a>
+                                            <a href=""><i class="bi bi-telephone-outbound"><img src="imgs/ph1.png" alt=""></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="imgs/client2.png" alt=""></td>
+                                        <td>REDA</td>
+                                        <td>
+                                            <a href=""><i class="bi bi-person-circle"><img src="imgs/per.png" alt=""></i></a>
+                                            <a href=""><i class="bi bi-envelope"><img src="imgs/e1.png" alt=""></i></a>
+                                            <a href=""><i class="bi bi-telephone-outbound"><img src="imgs/ph1.png" alt=""></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="imgs/client3.png" alt=""></td>
+                                        <td>YOUNES</td>
+                                        <td>
+                                            <a href=""><i class="bi bi-person-circle"><img src="imgs/per.png" alt=""></i></a>
+                                            <a href=""><i class="bi bi-envelope"><img src="imgs/e1.png" alt=""></i></a>
+                                            <a href=""><i class="bi bi-telephone-outbound"><img src="imgs/ph1.png" alt=""></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="imgs/client1.png" alt=""></td>
+                                        <td>AMINE</td>
+                                        <td>
+                                            <a href=""><i class="bi bi-person-circle"><img src="imgs/per.png" alt=""></i></a>
+                                            <a href=""><i class="bi bi-envelope"><img src="imgs/e1.png" alt=""></i></a>
+                                            <a href=""><i class="bi bi-telephone-outbound"><img src="imgs/ph1.png" alt=""></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="imgs/client3.png" alt=""></td>
+                                        <td>MOUAAD</td>
+                                        <td>
+                                            <a href=""><i class="bi bi-person-circle"><img src="imgs/per.png" alt=""></i></a>
+                                            <a href=""><i class="bi bi-envelope"><img src="imgs/e1.png" alt=""></i></a>
+                                            <a href=""><i class="bi bi-telephone-outbound"><img src="imgs/ph1.png" alt=""></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="imgs/client2.png" alt=""></td>
+                                        <td>HAMZA</td>
+                                        <td>
+                                            <a href=""><i class="bi bi-person-circle"><img src="imgs/per.png" alt=""></i></a>
+                                            <a href=""><i class="bi bi-envelope"><img src="imgs/e1.png" alt=""></i></a>
+                                            <a href=""><i class="bi bi-telephone-outbound"><img src="imgs/ph1.png" alt=""></i></a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <span>MERCI POUR VOS VISITE</span>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script> 
+  <script src="js/scripts.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/charts1.js"></script>
+
+</body>
+</html>
